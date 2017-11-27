@@ -1,0 +1,11 @@
+{
+    "銀座線":"odpt.Railway:TokyoMetro.Ginza",
+    "丸ノ内線":"odpt.Railway:TokyoMetro.Marunouchi",
+    "日比谷線":"odpt.Railway:TokyoMetro.Hibiya",
+    "東西線":"odpt.Railway:TokyoMetro.Tozai",
+    "千代田線":"odpt.Railway:TokyoMetro.Chiyoda",
+    "有楽町線":"odpt.Railway:TokyoMetro.Yurakucho",
+    "半蔵門線":"odpt.Railway:TokyoMetro.Hanzomon",
+    "南北線":"odpt.Railway:TokyoMetro.Namboku",
+    "副都心線":"odpt.Railway:TokyoMetro.Fukutoshin"
+}
