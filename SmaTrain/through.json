@@ -1,0 +1,21 @@
+{
+    "odpt.Railway:JR-East.Chuo":"JR中央線",
+    "odpt.Railway:JR-East.ChuoKaisoku":"JR中央線快速",
+    "odpt.Railway:JR-East.ChuoSobu":"JR中央・総武各駅停車",
+    "odpt.Railway:JR-East.Joban":"JR常磐線",
+    "odpt.Railway:JR-East.Saikyo":"JR埼京線",
+    "odpt.Railway:JR-East.Sobu":"JR総武線",
+    "odpt.Railway:Odakyu.Odawara":"小田急小田原線",
+    "odpt.Railway:SaitamaRailway.SaitamaRailway":"埼玉高速鉄道線",
+    "odpt.Railway:Seibu.Ikebukuro":"西武池袋線",
+    "odpt.Railway:Seibu.SeibuYurakucho":"西武有楽町線",
+    "odpt.Railway:Seibu.Shinjuku":"西武新宿線",
+    "odpt.Railway:TWR.Rinkai":"りんかい線",
+    "odpt.Railway:Tobu.Isesaki":"東武スカイツリーライン",
+    "odpt.Railway:Tobu.Tojo":"東武東上線",
+    "odpt.Railway:Tokyu.DenEnToshi":"東急田園都市線",
+    "odpt.Railway:Tokyu.Meguro":"東急目黒線",
+    "odpt.Railway:Tokyu.Toyoko":"東急東横線",
+    "odpt.Railway:ToyoRapidRailway.ToyoRapidRailway":"東葉高速鉄道線",
+    "odpt.Railway:Minatomirai.Minatomirai":"みなとみらい線"
+}

@@ -1,0 +1,18 @@
+{
+    "odpt.Railway:TokyoMetro.Yurakucho":{
+        "odpt.RailDirection:TokyoMetro.ShinKiba":{
+            "odpt.TrainType:TokyoMetro.S-TRAIN":{
+                "odpt.Station:TokyoMetro.Yurakucho.Iidabashi":false,
+                "odpt.Station:TokyoMetro.Yurakucho.Yurakucho":false,
+                "odpt.Station:TokyoMetro.Yurakucho.Toyosu":true
+            }
+        },
+        "odpt.RailDirection:TokyoMetro.KotakeMukaihara":{
+            "odpt.TrainType:TokyoMetro.S-TRAIN":{
+                "odpt.Station:TokyoMetro.Yurakucho.Iidabashi":true,
+                "odpt.Station:TokyoMetro.Yurakucho.Yurakucho":true,
+                "odpt.Station:TokyoMetro.Yurakucho.Toyosu":true
+            }
+        },
+    }
+}

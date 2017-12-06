@@ -1,0 +1,20 @@
+{
+    "odpt.TrainType:TokyoMetro.Unknown":"不明",
+    "odpt.TrainType:TokyoMetro.Local":"各停",
+    "odpt.TrainType:TokyoMetro.Express":"急行",
+    "odpt.TrainType:TokyoMetro.Rapid":"快速",
+    "odpt.TrainType:TokyoMetro.SemiExpress":"準急",
+    "odpt.TrainType:TokyoMetro.TamaExpress":"多摩急行",
+    "odpt.TrainType:TokyoMetro.HolidayExpress":"急行(土日祝)",
+    "odpt.TrainType:TokyoMetro.CommuterSemiExpress":"通勤準急",
+    "odpt.TrainType:TokyoMetro.Extra":"臨時",
+    "odpt.TrainType:TokyoMetro.RomanceCar":"特急ロマンスカー",
+    "odpt.TrainType:TokyoMetro.RapidExpress":"快速急行",
+    "odpt.TrainType:TokyoMetro.CommuterExpress":"通勤急行",
+    "odpt.TrainType:TokyoMetro.LimitedExpress":"特急",
+    "odpt.TrainType:TokyoMetro.CommuterLimitedExpress":"通勤特急",
+    "odpt.TrainType:TokyoMetro.CommuterRapid":"通勤快速",
+    "odpt.TrainType:TokyoMetro.ToyoRapid":"東葉快速",
+    "odpt.TrainType:TokyoMetro.F-Liner":"Fライナー",
+    "odpt.TrainType:TokyoMetro.S-TRAIN":"S-TRAIN"
+}

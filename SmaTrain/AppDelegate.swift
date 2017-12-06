@@ -9,8 +9,17 @@
 import UIKit
 import Realm
 import RealmSwift
+import SwiftyJSON
+import Alamofire
 
+class ExpressData: Object{
+    @objc dynamic var lineCode = ""
+    @objc dynamic var stationCode = ""
+    @objc dynamic var typeName = ""
+    @objc dynamic var name = ""
+}
 class RegisterStationAndDistrict: Object{
+    @objc dynamic var priority = 0
     @objc dynamic var StationName = ""
     @objc dynamic var StationCode = ""
     @objc dynamic var LineNameInStation = ""
@@ -45,10 +54,15 @@ class timeTableInTrainInStation:Object{
     @objc dynamic var operationgCode = "" //運行番号
     @objc dynamic var lineCode = "" //東京メトロ線のAPIで使用される路線名
     @objc dynamic var trainID = 0 //始発から順に数えた時のID（列車１本に１コード）
+    @objc dynamic var trainType = "" //種別
+    @objc dynamic var trainDestination = "" //行き先
+    @objc dynamic var isTrainThrough = false //直通か
+    @objc dynamic var ThroughOperator = "" //直通先
     @objc dynamic var trainDirection = "" //電車の方向
     @objc dynamic var stationCode = "" //駅名
     @objc dynamic var stationID = 0
     @objc dynamic var time = "" //発車時刻
+    @objc dynamic var timeInt = 0 //発車時刻4桁（hh:mm）をそのままIntに変換したもの ソート用
     @objc dynamic var week = "" //平日・休日・土曜の種別
 }
 
@@ -61,6 +75,10 @@ class AppMetaData:Object{
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    var LineName = ""
+    var StationName = ""
+    var isFinishRegister = false
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
@@ -81,7 +99,67 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
         */
+        
+        let url = URL(string:"https://dc.akbart.net/imadokotrain/stopStations.json")
+        var isCompleteDataGetted = true
+        Alamofire.request(url!).responseJSON{response in
+            let json = JSON(response.result.value!)
+            //let json = JsonGet(fileName: "stopStations")
+            let db = try! Realm()
+            let currentData = db.objects(ExpressData.self)
+            try! db.write {
+                db.delete(currentData)
+            }
+            for i in 0...json.count-1{
+                var stations = [String]()
+                
+                //print(json)
+                
+                for j in 0...json[String(describing:i)].count-2{
+                    //print(json[String(describing:i)][String(describing:j)]["stop"].count)
+                    for k in 1...json[String(describing:i)][String(describing:j)]["stop"].count{
+                        let object = ExpressData()
+                        object.lineCode = String(describing:json[String(describing:i)]["lineName"])
+                        object.stationCode = String(describing:json[String(describing:i)][String(describing:j)]["stop"][String(describing:k)])
+                        object.typeName = String(describing:json[String(describing:i)][String(describing:j)]["name"])
+                        //print(String(describing:json[String(describing:i)][String(describing:j)]["name"]))
+                        //print(String(describing:json[String(describing:i)][String(describing:j)]["stop"][String(describing:k)]))
+                        
+                        try! db.write {
+                            db.add(object)
+                        }
+                        
+                        isCompleteDataGetted = false
+                    }
+                }
+                
+            }
+            //print(db.objects(ExpressData.self))
+        }
+        let runLoop = RunLoop.current
+        while isCompleteDataGetted &&
+            runLoop.run(mode: RunLoopMode.defaultRunLoopMode, before: NSDate(timeIntervalSinceNow: 0.1) as Date) {
+                //print("まだ取得が終わっていません")
+        }
+        
         return true
+    }
+    
+    func JsonGet(fileName :String) -> JSON {
+        let path = Bundle.main.path(forResource: fileName, ofType: "json")
+        //print(path)
+        
+        do{
+            let jsonStr = try String(contentsOfFile: path!)
+            //print(jsonStr)
+            
+            let json = JSON.parse(jsonStr)
+            
+            return json
+        } catch {
+            return nil
+        }
+        
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

@@ -12,6 +12,15 @@
 		960DD1B31FC926E400343B2D /* line.json in Resources */ = {isa = PBXBuildFile; fileRef = 960DD1B21FC926E400343B2D /* line.json */; };
 		9617F93E1FC28722008D5114 /* metro_stationDict.json in Resources */ = {isa = PBXBuildFile; fileRef = 9617F93C1FC28721008D5114 /* metro_stationDict.json */; };
 		9617F93F1FC28722008D5114 /* other_stationDict.json in Resources */ = {isa = PBXBuildFile; fileRef = 9617F93D1FC28721008D5114 /* other_stationDict.json */; };
+		965C28D01FD270110098A183 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965C28CF1FD270110098A183 /* TableViewCell.swift */; };
+		9676DC5D1FD7A8120006CE50 /* icon_000010_256.png in Resources */ = {isa = PBXBuildFile; fileRef = 9676DC5B1FD7A8110006CE50 /* icon_000010_256.png */; };
+		9676DC5E1FD7A8120006CE50 /* icon_119450_256.png in Resources */ = {isa = PBXBuildFile; fileRef = 9676DC5C1FD7A8110006CE50 /* icon_119450_256.png */; };
+		9676DC611FD7A8750006CE50 /* icon_119450_32.png in Resources */ = {isa = PBXBuildFile; fileRef = 9676DC5F1FD7A8740006CE50 /* icon_119450_32.png */; };
+		9676DC621FD7A8750006CE50 /* icon_000010_32.png in Resources */ = {isa = PBXBuildFile; fileRef = 9676DC601FD7A8750006CE50 /* icon_000010_32.png */; };
+		96B756201FD29A50002AF2BD /* train_types.json in Resources */ = {isa = PBXBuildFile; fileRef = 96B7561F1FD29A50002AF2BD /* train_types.json */; };
+		96B756221FD29DFB002AF2BD /* through.json in Resources */ = {isa = PBXBuildFile; fileRef = 96B756211FD29DFB002AF2BD /* through.json */; };
+		96C24EFD1FD6AF8900ACC0CA /* stopStations.json in Resources */ = {isa = PBXBuildFile; fileRef = 96C24EFC1FD6AF8900ACC0CA /* stopStations.json */; };
+		96C24EFF1FD6DA0C00ACC0CA /* optional_Info.json in Resources */ = {isa = PBXBuildFile; fileRef = 96C24EFE1FD6DA0C00ACC0CA /* optional_Info.json */; };
 		96D5D9AE1FC19518006F8760 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D5D9AD1FC19518006F8760 /* AppDelegate.swift */; };
 		96D5D9B01FC19518006F8760 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D5D9AF1FC19518006F8760 /* ViewController.swift */; };
 		96D5D9B31FC19518006F8760 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96D5D9B11FC19518006F8760 /* Main.storyboard */; };
@@ -19,6 +28,7 @@
 		96D5D9B81FC19518006F8760 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96D5D9B61FC19518006F8760 /* LaunchScreen.storyboard */; };
 		96D5D9C31FC19518006F8760 /* SmaTrainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D5D9C21FC19518006F8760 /* SmaTrainTests.swift */; };
 		96D5D9CE1FC19518006F8760 /* SmaTrainUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D5D9CD1FC19518006F8760 /* SmaTrainUITests.swift */; };
+		96E5C7B81FD0F94D00155EFD /* SettingConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E5C7B71FD0F94D00155EFD /* SettingConfiguration.swift */; };
 		A13D368902DC0A4C1B9EAA51 /* Pods_SmaTrain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFD34A26C33D193B1E2FDA8B /* Pods_SmaTrain.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +60,15 @@
 		9617F93B1FC19645008D5114 /* SmaTrain.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SmaTrain.entitlements; sourceTree = "<group>"; };
 		9617F93C1FC28721008D5114 /* metro_stationDict.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = metro_stationDict.json; sourceTree = "<group>"; };
 		9617F93D1FC28721008D5114 /* other_stationDict.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = other_stationDict.json; sourceTree = "<group>"; };
+		965C28CF1FD270110098A183 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		9676DC5B1FD7A8110006CE50 /* icon_000010_256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_000010_256.png; sourceTree = "<group>"; };
+		9676DC5C1FD7A8110006CE50 /* icon_119450_256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_119450_256.png; sourceTree = "<group>"; };
+		9676DC5F1FD7A8740006CE50 /* icon_119450_32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_119450_32.png; sourceTree = "<group>"; };
+		9676DC601FD7A8750006CE50 /* icon_000010_32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_000010_32.png; sourceTree = "<group>"; };
+		96B7561F1FD29A50002AF2BD /* train_types.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = train_types.json; sourceTree = "<group>"; };
+		96B756211FD29DFB002AF2BD /* through.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = through.json; sourceTree = "<group>"; };
+		96C24EFC1FD6AF8900ACC0CA /* stopStations.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = stopStations.json; sourceTree = "<group>"; };
+		96C24EFE1FD6DA0C00ACC0CA /* optional_Info.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = optional_Info.json; sourceTree = "<group>"; };
 		96D5D9AA1FC19518006F8760 /* SmaTrain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmaTrain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96D5D9AD1FC19518006F8760 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96D5D9AF1FC19518006F8760 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +82,7 @@
 		96D5D9C91FC19518006F8760 /* SmaTrainUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmaTrainUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		96D5D9CD1FC19518006F8760 /* SmaTrainUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmaTrainUITests.swift; sourceTree = "<group>"; };
 		96D5D9CF1FC19518006F8760 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96E5C7B71FD0F94D00155EFD /* SettingConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingConfiguration.swift; sourceTree = "<group>"; };
 		BFD34A26C33D193B1E2FDA8B /* Pods_SmaTrain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmaTrain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6231E52DCB5AF05D32068FA /* Pods-SmaTrain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmaTrain.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmaTrain/Pods-SmaTrain.release.xcconfig"; sourceTree = "<group>"; };
 		DED62BDC59B63B5DA73504BA /* Pods_SmaTrainTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmaTrainTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -148,10 +168,20 @@
 				96D5D9AD1FC19518006F8760 /* AppDelegate.swift */,
 				96D5D9AF1FC19518006F8760 /* ViewController.swift */,
 				96D5D9B11FC19518006F8760 /* Main.storyboard */,
+				9676DC5B1FD7A8110006CE50 /* icon_000010_256.png */,
+				9676DC5C1FD7A8110006CE50 /* icon_119450_256.png */,
+				9676DC601FD7A8750006CE50 /* icon_000010_32.png */,
+				9676DC5F1FD7A8740006CE50 /* icon_119450_32.png */,
+				965C28CF1FD270110098A183 /* TableViewCell.swift */,
+				96E5C7B71FD0F94D00155EFD /* SettingConfiguration.swift */,
 				96D5D9B41FC19518006F8760 /* Assets.xcassets */,
 				96D5D9B61FC19518006F8760 /* LaunchScreen.storyboard */,
 				96D5D9B91FC19518006F8760 /* Info.plist */,
 				9617F93C1FC28721008D5114 /* metro_stationDict.json */,
+				96C24EFC1FD6AF8900ACC0CA /* stopStations.json */,
+				96C24EFE1FD6DA0C00ACC0CA /* optional_Info.json */,
+				96B756211FD29DFB002AF2BD /* through.json */,
+				96B7561F1FD29A50002AF2BD /* train_types.json */,
 				960DD1B21FC926E400343B2D /* line.json */,
 				9617F93D1FC28721008D5114 /* other_stationDict.json */,
 			);
@@ -300,11 +330,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9676DC621FD7A8750006CE50 /* icon_000010_32.png in Resources */,
+				9676DC611FD7A8750006CE50 /* icon_119450_32.png in Resources */,
 				96D5D9B81FC19518006F8760 /* LaunchScreen.storyboard in Resources */,
 				96D5D9B51FC19518006F8760 /* Assets.xcassets in Resources */,
+				96B756201FD29A50002AF2BD /* train_types.json in Resources */,
 				9617F93E1FC28722008D5114 /* metro_stationDict.json in Resources */,
+				9676DC5D1FD7A8120006CE50 /* icon_000010_256.png in Resources */,
+				96C24EFF1FD6DA0C00ACC0CA /* optional_Info.json in Resources */,
 				96D5D9B31FC19518006F8760 /* Main.storyboard in Resources */,
+				96B756221FD29DFB002AF2BD /* through.json in Resources */,
+				96C24EFD1FD6AF8900ACC0CA /* stopStations.json in Resources */,
 				9617F93F1FC28722008D5114 /* other_stationDict.json in Resources */,
+				9676DC5E1FD7A8120006CE50 /* icon_119450_256.png in Resources */,
 				960DD1B31FC926E400343B2D /* line.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -352,6 +390,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SmaTrain/Pods-SmaTrain-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/CalculateCalendarLogic/CalculateCalendarLogic.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
@@ -359,6 +398,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CalculateCalendarLogic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
@@ -487,6 +527,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				96D5D9B01FC19518006F8760 /* ViewController.swift in Sources */,
+				965C28D01FD270110098A183 /* TableViewCell.swift in Sources */,
+				96E5C7B81FD0F94D00155EFD /* SettingConfiguration.swift in Sources */,
 				96D5D9AE1FC19518006F8760 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
